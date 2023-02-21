@@ -1,0 +1,14 @@
+         //THE REVERSE OF GIVEN NUMBER//
+#include<stdio.h>
+main()
+{
+	int a=0,b=0,n;
+	scanf("%d",&n);
+	while(n!=0)
+	{
+		b=n%10;
+		a=(a*10)+b;
+		n=n/10;
+	}
+	printf("the reverse of given number is:%d",a);
+	}
