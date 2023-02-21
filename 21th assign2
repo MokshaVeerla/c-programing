@@ -1,0 +1,18 @@
+//arsmstrong number or not//
+#include<stdio.h>
+main()
+{
+	int num,p,r,sum=0; //p= original,r=rem//
+	scanf("%d",&num);
+	p=num;
+	while(p!=0)
+	{
+		r=p%10;
+		sum=sum+r*r*r;
+		p=p/10;
+	}
+	if(sum==num)
+	printf("ARMSTRONG");
+	else
+	printf("NOT AN ARMSTRONG");
+}
